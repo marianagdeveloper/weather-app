@@ -1,6 +1,6 @@
 //API
 function displayTemperature(response) {
-    console.log(response.data);
+    // console.log(response.data);
 
     let temperature = Math.round(response.data.temperature.current);
     let city = response.data.city;
