@@ -1,13 +1,31 @@
 //API
 function displayTemperature(response) {
+    console.log(response.data);
+
     let temperature = Math.round(response.data.temperature.current);
     let city = response.data.city;
+    let humidity = response.data.temperature.humidity;
+    let wind = response.data.wind.speed;
+    let condition = response.data.condition.description;
+    let icon = response.data.condition.icon_url;
 
     let cityElement = document.querySelector("#current-city");
     cityElement.innerHTML = city;
 
     let tempElement = document.querySelector(".current-temperature-value");
     tempElement.innerHTML = temperature;
+
+    let humidityElement = document.querySelector("#humidity");
+    humidityElement.innerHTML = `${humidity}%`;
+
+    let windElement = document.querySelector("#wind");
+    windElement.innerHTML = `${wind}km/h`;
+
+    let conditionElement = document.querySelector("#condition");
+    conditionElement.innerHTML = condition;
+
+    let iconElement = document.querySelector(".current-temperature-icon");
+    iconElement.innerHTML = `<img src=${icon} />`;
 }
 
 //Form
