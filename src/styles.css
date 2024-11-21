@@ -22,7 +22,7 @@ a {
 .weather-app {
   background: white;
   max-width: 600px;
-  margin: 60px auto;
+  margin: 30px auto;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
@@ -106,6 +106,36 @@ main {
 .current-temperature-unit {
   font-size: 28px;
   line-height: 2;
+}
+
+.weather-forecast {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.weather-forecast-date {
+  text-align: center;
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.weather-forecast-icon {
+  font-size: 38px;
+  text-align: center;
+}
+.weather-forecast-temperatures {
+  text-align: center;
+  color: #f65282;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.weather-forecast-temperature {
+  padding: 0 10px;
 }
 
 footer {
